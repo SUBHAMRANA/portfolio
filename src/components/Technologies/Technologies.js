@@ -1,50 +1,66 @@
-import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import React from "react";
+import "./Tech.css";
+import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
+import {
+  Section,
+  SectionDivider,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import {
+  List,
+  ListContainer,
+  ListItem,
+  ListParagraph,
+  ListTitle,
+} from "./TechnologiesStyles";
+const theme = {
+  breakpoints: {
+    sm: "480px",
+    md: "720px",
+  },
+};
 
-const Technologies = () =>  (
+const Technologies = () => (
   <Section id="tech">
     <SectionDivider divider />
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionTitle>Skills</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Back-end To Design
+      With almost a year of experience as a software developer, I've
+      successfully navigated diverse technologies in software development.
     </SectionText>
     <List>
       <ListItem>
         <picture>
-          <DiReact size="3rem" />
+          <IoLogoJavascript color="grey" size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
+          <ListTitle>Languages</ListTitle>
+          <ListParagraph>C++, Javascript, Java(Core) ,SQL</ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <picture>
+          <DiReact color="grey" size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>Frameworks/DataBase</ListTitle>
           <ListParagraph>
-            Experiece with <br />
-            React.js
+            ReactJs, NodeJS, ExpressJS, Angular MVC, SQL Server, MongoDB
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiFirebase size="3rem" />
+          <FaGithub color="grey" size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Back-End</ListTitle>
+          <ListTitle>Tools</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Node JS and Php
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiZend size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            tools like  Bootsrap
+            Git and Github, Bootstrap, SourceTree, Bitbucket, Atlassian JIRA,
+            CI/CD
           </ListParagraph>
         </ListContainer>
       </ListItem>

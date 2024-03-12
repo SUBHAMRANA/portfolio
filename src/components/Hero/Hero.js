@@ -1,8 +1,12 @@
-import React from 'react';
-
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import React from "react";
+import {
+  Section,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import { LeftSection } from "./HeroStyles";
+import Button from "react-bootstrap/Button";
+import ExampleDoc from "../../files/resume.pdf";
 
 const Hero = (props) => (
   <>
@@ -13,10 +17,17 @@ const Hero = (props) => (
           My Personal Portfolio
         </SectionTitle>
         <SectionText>
-        Hi, I'm Ritik Bhatt Nice to meet you .
-        I'm a full stack Developer with 1 year of experience through my projects. I'm currently pursuing my 3rd year of Engineering from Army Institute of Technology, Pune. I'm quitely confident, naturally curious and perpetuallly working on improving my chops on design problem at a time. 
+          Hi, I'm Ritik Bhatt. <br />
+          Nice to meet you! I am a results-driven Software Developer with a year
+          of hands-on experience, holding a degree from the esteemed Army
+          Institute of Technology, Pune. My approach is characterized by quiet
+          confidence, natural curiosity, and a perpetual commitment to refining
+          my skills. <br />I am eager to contribute my skills and enthusiasm to
+          dynamic projects that demand creativity and technical excellence.
         </SectionText>
-        {/* <Button onClick={props.handleClick}>Learn More</Button> */}
+        <a href={ExampleDoc} download="MyExampleDoc" target="_blank">
+          <Button variant="outline-warning">Download Resume</Button>
+        </a>
       </LeftSection>
     </Section>
   </>

@@ -1,6 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
-import styled, { ThemeProvider } from "styled-components";
 import {
   BlogCard,
   CardInfo,
@@ -10,33 +8,31 @@ import {
   Tag,
   TagList,
   TitleContent,
-  UtilityList,
   Img,
-} from "./ProjectsStyles";
+} from "../Projects/ProjectsStyles";
 import {
   Section,
   SectionDivider,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { projects } from "../../constants/constants";
-const theme = {
-  breakpoints: {
-    sm: "480px",
-    md: "720px",
-  },
-};
-const Projects = () => (
-  <Section nopadding id="projects">
-    <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
-    <ThemeProvider theme={theme}>
+import { experience } from "../../constants/experience";
+
+const Experience = () => {
+  return (
+    <Section nopadding id="Experience">
+      <SectionDivider />
+      <SectionTitle main>Experience</SectionTitle>
       <GridContainer>
-        {projects.map((p, i) => {
+        {experience.map((p, i) => {
           return (
             <BlogCard key={i}>
               <Img src={p.image} />
               <TitleContent>
                 <HeaderThree title>{p.title}</HeaderThree>
+                <div style={{ color: "#ffffb9" }}>
+                  {p.role}
+                  <div>{p.time}</div>
+                </div>
                 <Hr />
               </TitleContent>
               <CardInfo className="card-info">{p.description}</CardInfo>
@@ -48,20 +44,12 @@ const Projects = () => (
                   })}
                 </TagList>
               </div>
-              <UtilityList>
-                <Button href={p.source} variant="outline-info">
-                  Source Code
-                </Button>
-                <Button href={p.visit} variant="outline-warning">
-                  Visit Site
-                </Button>
-              </UtilityList>
             </BlogCard>
           );
         })}
       </GridContainer>
-    </ThemeProvider>
-  </Section>
-);
+    </Section>
+  );
+};
 
-export default Projects;
+export default Experience;
