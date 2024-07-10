@@ -38,7 +38,7 @@ const Technologies = () => (
         </picture>
         <ListContainer>
           <ListTitle>Languages</ListTitle>
-          <ListParagraph>C++, Javascript, Java(Core) ,SQL</ListParagraph>
+          <ListParagraph>C++, Javascript, TypeScript, Java(Core) ,SQL,Mongo</ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
@@ -48,7 +48,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Frameworks/DataBase</ListTitle>
           <ListParagraph>
-            ReactJs, NodeJS, ExpressJS, Angular MVC, SQL Server, MongoDB
+            ReactJs, NodeJS, ExpressJS, Angular MVC, SQL Server, MongoDB, Reactive Java
           </ListParagraph>
         </ListContainer>
       </ListItem>
