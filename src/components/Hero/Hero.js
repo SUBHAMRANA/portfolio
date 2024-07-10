@@ -6,7 +6,7 @@ import {
 } from "../../styles/GlobalComponents";
 import { LeftSection } from "./HeroStyles";
 import Button from "react-bootstrap/Button";
-import ExampleDoc from "../../files/resume.pdf";
+import Resume from "../../files/resume.pdf";
 
 const Hero = (props) => (
   <>
@@ -17,15 +17,10 @@ const Hero = (props) => (
           My Personal Portfolio
         </SectionTitle>
         <SectionText>
-          Hi, I'm Ritik Bhatt. <br />
-          Nice to meet you! I am a results-driven Software Developer with a year
-          of hands-on experience, holding a degree from the esteemed Army
-          Institute of Technology, Pune. My approach is characterized by quiet
-          confidence, natural curiosity, and a perpetual commitment to refining
-          my skills. <br />I am eager to contribute my skills and enthusiasm to
-          dynamic projects that demand creativity and technical excellence.
+          Hi, I'm Subham Rana. <br />
+          Nice to meet you! I am a dedicated Software Engineer with a robust skill set in frontend development using React and TypeScript, backend API design with Spring Boot and Reactive Java, and CI/CD integration with GitHub Actions and Azure Pipelines. At Turtlemint, I optimized user engagement through dynamic landing pages and impactful A/B testing, significantly boosting conversion rates. My tenure as a Software Engineering Intern at Microsoft involved streamlining development processes by integrating CI into the Playwright dashboard, enhancing debugging experiences. Additionally, I have experience as a Teaching Assistant at Geeks for Geeks, where I mentored students in computer fundamentals, contributing to their academic growth. I am proud to have qualified for Facebook Hackercup multiple times, achieved 6-star status on Hackerrank, and secured top global rankings on competitive programming platforms like Codeforces and CodeChef.
         </SectionText>
-        <a href={ExampleDoc} download="MyExampleDoc" target="_blank">
+        <a href={Resume} download="resume" target="_blank">
           <Button variant="outline-warning">Download Resume</Button>
         </a>
       </LeftSection>
